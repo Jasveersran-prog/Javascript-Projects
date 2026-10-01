@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>My One-Page Website</title>
+
+<link rel="stylesheet" href="style.css">
+```
+
+</head>
+
+<body>
+
+```
+<!-- Navigation -->
+<nav>
+    <div class="logo">My Website</div>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+
+<!-- Home Section -->
+<section id="home" class="hero">
+
+    <div class="hero-content">
+        <h1>Welcome to My One-Page Website</h1>
+
+        <p>
+            This website was created as part of my JavaScript course.
+            It demonstrates HTML, CSS, and JavaScript skills.
+        </p>
+
+        <a href="#gallery" class="button">View Gallery</a>
+    </div>
+
+</section>
+
+
+<!-- About Section -->
+<section id="about" class="about">
+
+    <h2>About This Project</h2>
+
+    <p>
+        Welcome to my One-Page Website project. This website demonstrates
+        my understanding of front-end web development using HTML, CSS,
+        and JavaScript.
+    </p>
+
+    <p>
+        One of the main features of this project is a JavaScript-powered
+        lightbox image gallery. Click any image in the gallery to open it
+        in a larger modal window.
+    </p>
+
+</section>
+
+
+<!-- Gallery Section -->
+<section id="gallery" class="gallery-section">
+
+    <h2>Image Gallery</h2>
+
+    <p>Click an image to open the lightbox.</p>
+
+    <div class="gallery">
+
+        <!-- Image 1 -->
+        <div class="gallery-item">
+            <img
+                src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=800&q=80"
+                alt="Beautiful mountain landscape"
+                onclick="openLightbox(this)"
+            >
+        </div>
+
+        <!-- Image 2 -->
+        <div class="gallery-item">
+            <img
+                src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
+                alt="Ocean beach"
+                onclick="openLightbox(this)"
+            >
+        </div>
+
+        <!-- Image 3 -->
+        <div class="gallery-item">
+            <img
+                src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80"
+                alt="Forest trees"
+                onclick="openLightbox(this)"
+            >
+        </div>
+
+        <!-- Image 4 -->
+        <div class="gallery-item">
+            <img
+                src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=80"
+                alt="Mountain lake"
+                onclick="openLightbox(this)"
+            >
+        </div>
+
+        <!-- Image 5 -->
+        <div class="gallery-item">
+            <img
+                src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80"
+                alt="Nature landscape"
+                onclick="openLightbox(this)"
+            >
+        </div>
+
+        <!-- Image 6 -->
+        <div class="gallery-item">
+            <img
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80"
+                alt="Scenic landscape"
+                onclick="openLightbox(this)"
+            >
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Lightbox / Modal -->
+<div id="lightbox" class="lightbox">
+
+    <span class="close" onclick="closeLightbox()">&times;</span>
+
+    <img id="lightbox-image" class="lightbox-image" src="" alt="Enlarged gallery image">
+
+    <div id="lightbox-caption"></div>
+
+</div>
+
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+
+    <h2>Contact</h2>
+
+    <p>
+        Thank you for visiting my One-Page Website.
+    </p>
+
+    <a href="mailto:example@email.com" class="button">
+        Contact Me
+    </a>
+
+</section>
+
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2026 My One-Page Website | JavaScript Course Project</p>
+</footer>
+
+
+<script src="script.js"></script>
+```
+
+</body>
+</html>
